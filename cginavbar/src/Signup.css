@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dongle:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+    font-family: "Poppins", sans-serif;  
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Dongle', sans-serif;
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Poppins', sans-serif;
+}  
+body {  
+    overflow: hidden;  
+     
+}  
+section {  
+    display: flex;  
+    min-height: 100vh;  
+    align-items: center;  
+    justify-content: center;  
+    background: linear-gradient(to bottom, #f7f7fe, #dff1ff);  
+}  
+.gradient{
+    background: rgb(40,11,168);
+    background: linear-gradient(90deg, rgba(40,11,168,1) 40%, rgba(162,7,204,1) 100%);
+}
+
+/* section .colour {  
+    position: absolute;  
+    filter: blur(150px);  
+}  
+section .colour:nth-child(1) {  
+    top: -350px;  
+    width: 600px;  
+    height: 600px;  
+    background: #bf4ad4;   
+    background: rgb(40,11,168);
+    background: linear-gradient(90deg, rgba(40,11,168,1) 40%, rgba(162,7,204,1) 100%);
+}  
+section .colour:nth-child(2) {  
+    left: 100px;  
+    width: 500px;  
+    height: 500px;  
+    bottom: -150px;  
+    background: #ffa500;  
+}  
+section .colour:nth-child(3) {  
+    right: 100px;  
+    bottom: 50px;  
+    width: 300px;  
+    height: 300px;  
+    background: #2b67f3;  
+}   */
+.box {  
+    position: relative;  
+}  
+.box .square {  
+    position: absolute;  
+    border-radius: 10px;  
+    backdrop-filter: blur(5px);  
+    background: rgba(255, 255, 255, 0.1);  
+    animation-delay: calc(-1s * var(--i));  
+    animation: animate 10s linear infinite;  
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);  
+    border: 1px solid rgba(255, 255, 255, 0.5);  
+    border-right: 1px solid rgba(255, 255, 255, 0.2);  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+}  
+@keyframes animate {  
+    0%,  
+    100% {  
+         transform: translateY(-40px);  
+    }  
+    50% {  
+         transform: translateY(40px);  
+    }  
+}  
+.box .square:nth-child(1) {  
+    top: -50px;  
+    left: -60px;  
+    width: 100px;  
+    height: 100px;  
+    /* background-color: #00FF7F; */
+}  
+.box .square:nth-child(2) {  
+    z-index: 2;  
+    top: 150px;  
+    left: -100px;  
+    width: 120px;  
+    height: 120px;  
+    /* background-color: #00FF7F; */
+}  
+.box .square:nth-child(3) {  
+    z-index: 2;  
+    width: 80px;  
+    height: 80px;  
+    right: -50px;  
+    bottom: -60px; 
+    bottom: -10px; 
+    /* background-color: #00FF7F;  */
+}  
+.box .square:nth-child(4) {  
+    left: 10px;  
+    width: 50px;  
+    height: 50px;  
+    bottom: -20px;
+    /* background-color: #00FF7F;   */
+}  
+.box .square:nth-child(5) {  
+    top: -80px;  
+    left: 140px;  
+    width: 60px;  
+    height: 60px;
+    /* background-color: #00FF7F;   */
+}  
+.container {  
+    width: 400px;  
+    display: flex;  
+    min-height: 400px;  
+    position: relative;  
+    border-radius: 10px;  
+    align-items: center;  
+    justify-content: center;  
+    backdrop-filter: blur(5px);  
+    background: rgba(255, 255, 255, 0.1); 
+    /* background-color: rgb(185, 174, 174);  */
+    /* background: rgba(255, 255, 255, 0.2);  
+    background: linear-gradient(90deg, rgba(24,186,146,0.7819502801120448) 15%, rgba(226,227,242,0.3225665266106442) 89%); */
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);  
+    border: 1px solid rgba(255, 255, 255, 0.5);  
+    border-right: 1px solid rgba(255, 255, 255, 0.2);  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+   
+}  
+.form {  
+     width: 100%;  
+    height: 100%;  
+    padding:10px 30px;  
+    position: relative;   
+    /* background-color: rgb(197, 98, 147); */
+}  
+.form h2 {  
+    color: #fff;  
+    /* color: #000;   */
+    font-size: 24px;   
+    font-weight: 600;  
+    position: relative;  
+    letter-spacing: 1px;  
+    margin-bottom: 10px;  
+}  
+
+/* .form h2::before {  
+    left: 0;  
+    width: 80px;  
+    height: 4px;  
+    content: "";  
+    bottom: -10px;  
+    background: #fff;  
+    background: #000;  
+    position: absolute;  
+}   */
+
+.form p {  
+    color: #fff;  
+    font-size: 14px;  
+    /* font-weight: 600;   */
+    position: relative;  
+    letter-spacing: 1px;  
+    margin-bottom: 5px;  
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} 
+.gradient .box .form .requ{
+    color:#fff;
+    font-size: 14px;
+    position: relative;  
+    letter-spacing: 1px;  
+    margin-bottom: 5px; 
+    display: flex;
+    justify-content: flex-start;
+
+}
+.form .FoP{
+    margin-top: 20px;
+    margin-bottom: 0;  
+}
+.form .FoP1{
+    margin-top: 1px;
+
+}
+/* .form p a{
+    color: orangered;
+    color: whitesmoke;
+} */
+.form .input__box {  
+    width: 100%;  
+    margin-top: 20px;  
+    /* position: absolute; */
+    /* position: relative; */
+}  
+.form .input__box input {  
+    width: 100%;  
+    color: #fff;  
+    border: none;  
+    outline: none;  
+    font-size: 16px;  
+    padding: 8px 45px;  
+    letter-spacing: 1px;  
+    /* border-radius: 35px;   */
+    /* border-radius: 5px; */
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);  
+    /* background-color:#dad6d6; */
+    /* border: 1px solid rgba(255, 255, 255, 0.5);   */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);  
+    /* border-right: 1px solid rgba(255, 255, 255, 0.2);   */
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.2);   */
+    /* position: relative; */
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(251, 251, 252);  
+    
+} 
+.form .input__box i{
+    /* color: red;
+    background-color: blue; */
+    margin-left: 20px;
+    margin-top: 12px;
+    position: absolute;
+    /* padding: 10px; */
+    /* min-width: 40px;
+    width: 400px; */
+} 
+.form ::placeholder{
+    /* color:#000; */
+    color: #00FF7F;
+    /* font-weight:600; */
+    font-size: 14px;
+    font-weight:bold;
+}
+.form .input__box input[type="submit"] {  
+    color: #666;  
+    color: #000;  
+    cursor: pointer;  
+    background: #fff;  
+    /* background-color: orangered; */
+    /* background-color: rgb(19, 22, 185); */
+    max-width: 150px;  
+    font-weight: 600;  
+    margin-bottom: 20px;  
+    border: none;
+    transform: translate( all 0.6s);
+    margin-right: 20px;
+    
+    /* display: flex;
+    align-items: center;
+    text-align: center; */
+} 
+.form .input__box input[type="submit"]:hover{
+    border: 1px solid orangered;
+    border: 1px solid whitesmoke;
+    background-color: transparent;
+    outline: none;
+} 
+/* .forget {  
+    color: #fff;  
+    margin-top: 5px;  
+}  
+.forget a {  
+    color: #fff;  
+    font-weight: 600;  
+    text-decoration: none;  
+}  
+ 
+.gradient .box .container .form h3{
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+.gradient .box .container .form .sci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gradient .box .container .form .sci li{
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #607d8b;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+}
+.gradient .box .container .form .sci li:hover{
+    background: transparent;
+    border: 1px solid #fff;
+  
+}
+.gradient .box .container .form .sci li a{
+    color: #fff;
+    transform: scale(1.2);
+}
+.gradient .box .container .form .sci .Facebook{
+    background-color: blue; 
+ 
+    
+}
+.gradient .box .container .form .sci .Facebook:hover{
+    background-color: blue; 
+    
+    
+}
+    
+.gradient .box .container .form .sci .Instagram{
+    background-color: #8a3ab9;
+    
+}
+.gradient .box .container .form .sci .Twitter{
+    background-color: #1DA1F2;
+    
+} */

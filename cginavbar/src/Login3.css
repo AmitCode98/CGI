@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dongle:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+    font-family: "Poppins", sans-serif;  
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Dongle', sans-serif;
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Noto Sans', sans-serif; */
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Rubik', sans-serif; */
+    font-family: 'Inter', sans-serif;
+}  
+body {  
+    overflow: hidden;  
+}  
+section {  
+    display: flex;  
+    min-height: 100vh;  
+    align-items: center;  
+    justify-content: center;  
+    background: linear-gradient(to bottom, #f7f7fe, #dff1ff);  
+}  
+.gradient{
+    background: rgb(40,11,168);
+    background: linear-gradient(90deg, rgba(40,11,168,1) 40%, rgba(162,7,204,1) 100%);
+}
+
+/* section .colour {  
+    position: absolute;  
+    filter: blur(150px);  
+}  
+section .colour:nth-child(1) {  
+    top: -350px;  
+    width: 600px;  
+    height: 600px;  
+    background: #bf4ad4;   
+    background: rgb(40,11,168);
+    background: linear-gradient(90deg, rgba(40,11,168,1) 40%, rgba(162,7,204,1) 100%);
+}  
+section .colour:nth-child(2) {  
+    left: 100px;  
+    width: 500px;  
+    height: 500px;  
+    bottom: -150px;  
+    background: #ffa500;  
+}  
+section .colour:nth-child(3) {  
+    right: 100px;  
+    bottom: 50px;  
+    width: 300px;  
+    height: 300px;  
+    background: #2b67f3;  
+}   */
+.box {  
+    position: relative;  
+}  
+.box .square {  
+    position: absolute;  
+    border-radius: 10px;  
+    backdrop-filter: blur(5px);  
+    background: rgba(255, 255, 255, 0.1);  
+    animation-delay: calc(-1s * var(--i));  
+    animation: animate 10s linear infinite;  
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);  
+    border: 1px solid rgba(255, 255, 255, 0.5);  
+    border-right: 1px solid rgba(255, 255, 255, 0.2);  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+}  
+@keyframes animate {  
+    0%,  
+    100% {  
+         transform: translateY(-40px);  
+    }  
+    50% {  
+         transform: translateY(40px);  
+    }  
+}  
+.box .square:nth-child(1) {  
+    top: -50px;  
+    left: -60px;  
+    width: 100px;  
+    height: 100px;  
+}  
+.box .square:nth-child(2) {  
+    z-index: 2;  
+    top: 150px;  
+    left: -100px;  
+    width: 120px;  
+    height: 120px;  
+}  
+.box .square:nth-child(3) {  
+    z-index: 2;  
+    width: 80px;  
+    height: 80px;  
+    right: -50px;  
+    bottom: -60px;  
+}  
+.box .square:nth-child(4) {  
+    left: 100px;  
+    width: 50px;  
+    height: 50px;  
+    bottom: -80px;  
+}  
+.box .square:nth-child(5) {  
+    top: -80px;  
+    left: 140px;  
+    width: 60px;  
+    height: 60px;  
+}  
+.container {  
+    width: 400px;  
+    display: flex;  
+    min-height: 400px;  
+    position: relative;  
+    border-radius: 10px;  
+    align-items: center;  
+    justify-content: center;  
+    backdrop-filter: blur(5px);  
+    background: rgba(255, 255, 255, 0.1);  
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);  
+    border: 1px solid rgba(255, 255, 255, 0.5);  
+    border-right: 1px solid rgba(255, 255, 255, 0.2);  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    /* border: 2px solid red;  */
+    background-color: rgba(146, 151, 151, 0.534);
+    background-color: #fff;
+}  
+.form {  
+    width: 100%;  
+    height: 100%;  
+    padding: 40px;  
+    position: relative;  
+}  
+.form h2 {  
+    /* color: #fff;   */
+    color: #000;  
+    font-size: 30px;   
+    font-weight: 600;  
+    position: relative;  
+    letter-spacing: 1px;  
+    margin-bottom: 15px;  
+}  
+
+/* .form h2::before {  
+    left: 0;  
+    width: 80px;  
+    height: 4px;  
+    content: "";  
+    bottom: -10px;  
+    background: #000;  
+    position: absolute;  
+}   */
+
+.form p {  
+    /* color: #fff;   */
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;  
+    /* font-weight: 600;   */
+    position: relative;  
+    letter-spacing: 1px;  
+    margin-bottom: 5px;  
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} 
+.gradient .box .form .requ{
+    color:#fff;
+    color: #000;
+    font-size: 14px;
+    position: relative;  
+    letter-spacing: 1px;  
+    margin-bottom: 5px; 
+    display: flex;
+    justify-content: flex-start;
+
+}
+.form .FoP{
+    margin-top: 20px;
+    margin-bottom: 0;  
+}
+.form .FoP1{
+    margin-top: 1px;
+
+}
+.form p a{
+    color: orangered;
+    color: blue;
+    font-weight:bold;
+
+}
+.form .input__box {  
+    width: 100%;  
+    margin-top: 20px;  
+}  
+.form .input__box i{
+    margin-left: 20px;
+    margin-top: 12px;
+    position: absolute;
+}
+.form .input__box input {  
+    width: 100%;   
+    color: #000;
+    font-weight: bold;
+    border: none;  
+    outline: none;  
+    font-size: 16px;  
+    padding: 8px 45px;  
+    letter-spacing: 1px;  
+    border-radius: 35px;  
+    background: rgba(255, 255, 255, 0.2);  
+    border: 1px solid rgba(255, 255, 255, 0.5);  
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);   */
+    border-right: 1px solid rgba(255, 255, 255, 0.2);  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}  
+
+.form ::placeholder{
+    color:#000;
+    font-weight: bold;
+}
+.form .input__box input[type="submit"] {  
+    color: #666;  
+    color: #000;  
+    color: #fff;
+    cursor: pointer;  
+    background: #fff; 
+    background: rgb(40,11,168);
+    background: linear-gradient(90deg, rgba(40,11,168,1) 40%, rgba(162,7,204,1) 100%);
+    /* font-size: 18px; */
+    /* background-color: orangered; */
+    max-width: 150px;  
+    /* font-weight: 600;   */
+    margin-bottom: 20px;  
+    border: none;
+    transform: translate( all 0.6s);
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
+.form .input__box input[type="submit"]:hover{
+    background: rgb(40,11,168);
+    background: linear-gradient(90deg,rgba(162,7,204,1) 40%, rgba(40,11,168,1) 100% );
+
+
+    /* outline: none; */ 
+} 
+.forget {  
+    color: #fff;  
+    margin-top: 5px;  
+}  
+.forget a {  
+    color: #fff;  
+    font-weight: 600;  
+    text-decoration: none;  
+}  
+ 
+.gradient .box .container .form h3{
+    /* color: #fff; */
+    color: #000;
+    text-align: center;
+    /* margin: 20px 0 10px; */
+    font-weight: bold;
+    font-size: 20px;
+}
+.gradient .box .container .form .sci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0rem;
+}
+.gradient .box .container .form .sci li{
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #607d8b;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+   
+}
+.gradient .box .container .form .sci li:hover{
+    border: 2px solid #fff;
+  
+}
+.gradient .box .container .form .sci li a{
+    color: #fff;
+    transform: scale(1.2);
+}
+.gradient .box .container .form .sci .Facebook{
+    background-color: #4267B2; 
+    /* background-color: #fff;  */
+    
+}
+.gradient .box .container .form .sci .Instagram{
+    background-color: #F56040;
+    
+}
+.gradient .box .container .form .sci .Twitter{
+    background-color: #1DA1F2;
+    
+}
+.gradient .box .container .form .sci .Linkedin{
+    background-color: #0e76a8 ;
+    
+}
+
+     
+@media (max-width:480px){
+
+    section {  
+         display: flex;   
+        /* min-height: 50vh;  */
+        height: 50vh;
+        width:auto;
+        /* margin: auto; */
+        align-items: center;  
+        justify-content: center;  
+        background: linear-gradient(to bottom, #f7f7fe, #dff1ff);  
+    }  
+    .container{
+        /* border: 4px solid green; */
+        width: 340px;
+        /* width: auto; */
+        /* width: 410px; */
+        height: 250px;
+        /* width: auto; */
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* box-sizing: border-box; */
+        margin-right:20px;
+        margin: auto;
+        
+    }
+     .box .square:nth-child(1) {  
+        /* top: -40px;  
+        left: -30px;  
+        width: 60px;  
+        height:60px;  
+        background-color: red;  */
+        display: none;
+    }   
+    .box .square:nth-child(2) {  
+        
+        /* z-index: 2;  
+        top: 150px;  
+        left: -100px;  
+        width: 120px;  
+        height: 120px;
+        background-color: rgb(112, 36, 199);    */
+        display: none;
+        
+         
+    }  
+    .box .square:nth-child(3) {  
+         /* z-index: 2;  
+        width: 80px;  
+        height: 80px;  
+        right: -20px;  
+        bottom: -60px;     
+        background-color: green;   */
+        display: none; 
+        
+    }  
+    .box .square:nth-child(4) {  
+         /* left: 100px;  
+        width: 50px;  
+        height: 50px;  
+        bottom: -80px;  
+         width: auto;  
+        height:auto;    
+        background-color: rgb(230, 226, 20);   */
+        display: none; 
+    }  
+    .box .square:nth-child(5) {  
+        /* top: -80px;  
+        left: 140px;  
+        width: 60px;  
+        height: 60px; 
+        width: auto;  
+        height:auto; 
+        background-color: rgb(22, 178, 192);   */
+        display: none;   
+    } 
+
+    
+}
